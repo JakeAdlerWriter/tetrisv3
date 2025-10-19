@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Cyberpunk Neon Title Effect */
+@keyframes electric {
+  0%, 100% {
+    text-shadow: 
+      0 0 3.5px #DC1FFF,
+      0 0 7px #DC1FFF,
+      0 0 10.5px #DC1FFF,
+      0 0 14px #DC1FFF,
+      0 0 24.5px #DC1FFF,
+      0 0 28px #DC1FFF,
+      0 0 35px #DC1FFF,
+      2px 2px 5px #03E1FF,
+      -2px -2px 5px #03E1FF,
+      2px -2px 5px #03E1FF,
+      -2px 2px 5px #03E1FF;
+  }
+  50% {
+    text-shadow: 
+      0 0 1.75px #DC1FFF,
+      0 0 3.5px #DC1FFF,
+      0 0 5.25px #DC1FFF,
+      0 0 7px #DC1FFF,
+      0 0 12.25px #DC1FFF,
+      0 0 14px #DC1FFF,
+      0 0 17.5px #DC1FFF,
+      3px 3px 8px #03E1FF,
+      -3px -3px 8px #03E1FF,
+      3px -3px 8px #03E1FF,
+      -3px 3px 8px #03E1FF;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.cyberpunk-title {
+  font-family: 'Orbitron', monospace;
+  font-weight: 900;
+  color: #DC1FFF;
+  text-shadow: 
+    0 0 3.5px #DC1FFF,
+    0 0 7px #DC1FFF,
+    0 0 10.5px #DC1FFF,
+    0 0 14px #DC1FFF,
+    0 0 24.5px #DC1FFF,
+    0 0 28px #DC1FFF,
+    0 0 35px #DC1FFF,
+    2px 2px 5px #03E1FF,
+    -2px -2px 5px #03E1FF,
+    2px -2px 5px #03E1FF,
+    -2px 2px 5px #03E1FF;
+  animation: electric 2s ease-in-out infinite;
+  letter-spacing: 0.15em;
+}
